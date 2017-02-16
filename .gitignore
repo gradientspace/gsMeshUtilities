@@ -4,3 +4,11 @@ sdkmeshToOBJ/obj/
 sdkmeshToOBJ/packages/
 sdkmeshToOBJ/.vs/
 sdkmeshToOBJ/bunny.sdkmesh.obj
+gsMeshConvert/bin/
+gsMeshConvert/obj/
+gsMeshConvert/.vs/gsMeshConvert/v14/.suo
+test_output/
+
+builds/*
+!builds/current_build.zip
+
