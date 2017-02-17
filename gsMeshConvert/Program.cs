@@ -10,6 +10,16 @@ namespace gsMeshConvert
 {
     class Program
     {
+        //
+        // [TODO]
+        //   - binary output option
+        //   - option to strip data from inputs (eg remove normals/colors/uv/material from obj)
+        //   - option to remove material props from OBJ
+        //   - option to combine input meshes
+        //   - option to set float precision
+        //   - option to estimate normals for writing (eg for obj)
+        //   - option to set constant color for vertices
+        //
         static void Main(string[] args)
         {
             if (args.Length != 2) {
