@@ -1,12 +1,15 @@
+*.suo
+*/.vs/*
+
 sdkmeshToOBJ/bin/
 sdkmeshToOBJ/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
 sdkmeshToOBJ/obj/
 sdkmeshToOBJ/packages/
-sdkmeshToOBJ/.vs/
 sdkmeshToOBJ/bunny.sdkmesh.obj
 gsMeshConvert/bin/
 gsMeshConvert/obj/
-gsMeshConvert/.vs/gsMeshConvert/v14/.suo
+gsMeshSplit/bin/
+gsMeshSplit/obj/
 test_output/
 
 builds/*

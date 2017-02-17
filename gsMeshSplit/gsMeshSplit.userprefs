@@ -1,0 +1,19 @@
+﻿<Properties StartupConfiguration="{98E0FF96-68E1-4E93-BBBC-08FDF2C71251}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../geometry3Sharp/io/OBJWriter.cs">
+    <Files>
+      <File FileName="Program.cs" Line="26" Column="4" />
+      <File FileName="../geometry3Sharp/mesh/DMesh3Util.cs" Line="12" Column="86" />
+      <File FileName="../geometry3Sharp/io/OBJReader.cs" Line="633" Column="77" />
+      <File FileName="../geometry3Sharp/io/OBJWriter.cs" Line="177" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.gsMeshSplit PreferredExecutionTarget="MonoDevelop.Default" />
+  <DisabledProjects>
+    <String>gsMeshConvert.csproj</String>
+  </DisabledProjects>
+</Properties>
