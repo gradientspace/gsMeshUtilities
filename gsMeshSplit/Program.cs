@@ -8,24 +8,36 @@ using g3;
 
 namespace gsMeshSplit
 {
+
+
     class Program
     {
+
+        static void print_usage()
+        {
+            System.Console.WriteLine("gsMeshSplit v1.0 - Copyright gradientspace / Ryan Schmidt 2017");
+            System.Console.WriteLine("Questions? Comments? www.gradientspace.com or @gradientspace");
+            System.Console.WriteLine("usage: gsMeshSplit options <input_mesh.obj>");
+            System.Console.WriteLine("options:");
+            System.Console.WriteLine("  -output <directory_path>     : path to output directory");
+        }
+
         //
         // [TODO]
         //
         static void Main(string[] args)
         {
-            //if (args.Length != 1) {
-            //    System.Console.WriteLine("gsMeshSplit v1.0 - Copyright gradientspace / Ryan Schmidt 2017");
-            //    System.Console.WriteLine("Questions? Comments? www.gradientspace.com or @gradientspace");
-            //    System.Console.WriteLine("usage: gsMeshSplit <input_mesh.obj> options");
-            //    return;
-            //}
+            CommandArgumentSet arguments = new CommandArgumentSet();
+            arguments.Register("-output", "");
+            if ( arguments.Parse(args) == false ) {
+                return;
+            }
+            if ( arguments.Filenames.Count != 1 ) {
+                print_usage();
+                return;
+            }
 
-            //string sInputFile = args[0];
-			string sInputFile = "/Users/rms/Downloads/hornedfrog1/hornedfrog1 circle cut-2M.obj";
-			//string sInputFile = "/Users/rms/Downloads/tokay75k_test/tokay75k.obj";
-			//string sInputFile = "/Users/rms/Downloads/tokay75k_test/tokay75k_nocracks.obj";
+            string sInputFile = arguments.Filenames[0];
 			string sFilenameRoot = Path.GetFileNameWithoutExtension(sInputFile);
             if (!File.Exists(sInputFile)) {
                 System.Console.WriteLine("cannot find file " + sInputFile);
@@ -49,10 +61,16 @@ namespace gsMeshSplit
                 return;
             }
 
-			// [TODO] out if count == 0
+            // [TODO] out if count == 0
 
-
-			string sOutRoot = "/Users/rms/scratch/";
+            string sOutRoot = arguments.Strings["-output"];
+            if (sOutRoot.Length > 0) {
+                bool bOutIsFolder = Directory.Exists(sOutRoot);
+                if (!bOutIsFolder) {
+                    System.Console.WriteLine("-output folder {0} does not exist", sOutRoot);
+                    return;
+                }
+            }
 
 			Dictionary<int, List<int>> MeshesByMaterial = new Dictionary<int, List<int>>();
 			MeshesByMaterial[-1] = new List<int>();

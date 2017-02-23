@@ -15,3 +15,4 @@ test_output/
 builds/*
 !builds/current_build.zip
 
+gsMeshSplit/gsMeshSplit.csproj.user
