@@ -16,3 +16,6 @@ builds/*
 !builds/current_build.zip
 
 gsMeshSplit/gsMeshSplit.csproj.user
+gsPolyFontGenerator/obj/
+gsPolyFontGenerator/bin/
+.vs/
