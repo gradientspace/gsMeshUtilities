@@ -170,7 +170,11 @@ namespace gsPolyFontGenerator
 
 
             PlanarComplex.SolidRegionInfo solids = complex.FindSolidRegions(0.0f, false);
-            return solids.Polygons;
+            List<GeneralPolygon2d> result = solids.Polygons;
+            foreach (var gp in result)
+                gp.Transform((v) => { return new Vector2d(v.x, emSize - v.y); });
+
+            return result;
         }
 
     }
