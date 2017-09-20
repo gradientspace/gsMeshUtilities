@@ -1,8 +1,6 @@
 # gsMeshUtilities
 
-Open-Souce (MIT License) command-line utilities for mesh things.
-
-Currently just one tool, in C#, but there is more to come, and probably there will be some C++ too...
+Open-Souce (MIT License) command-line utilities for mesh and geometry things.
 
 Questions? Contact Ryan Schmidt [@rms80](http://www.twitter.com/rms80) / [gradientspace](http://www.gradientspace.com)
 
