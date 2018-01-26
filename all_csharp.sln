@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.10
+VisualStudioVersion = 15.0.27130.2024
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gsMeshSplit", "gsMeshSplit\gsMeshSplit.csproj", "{98E0FF96-68E1-4E93-BBBC-08FDF2C71251}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "geometry3Sharp", "geometry3Sharp\geometry3Sharp.csproj", "{0C518DDA-28FE-44CA-9AB0-F9773974F13A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gsPolyFontGenerator", "gsPolyFontGenerator\gsPolyFontGenerator.csproj", "{CFA67DEC-CE37-49E5-AD98-0825D48DF2DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gsMeshSimplify", "gsMeshSimplify\gsMeshSimplify.csproj", "{AF10E05C-1B39-408E-9DFF-EAEF8CC29661}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{CFA67DEC-CE37-49E5-AD98-0825D48DF2DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFA67DEC-CE37-49E5-AD98-0825D48DF2DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFA67DEC-CE37-49E5-AD98-0825D48DF2DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF10E05C-1B39-408E-9DFF-EAEF8CC29661}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF10E05C-1B39-408E-9DFF-EAEF8CC29661}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF10E05C-1B39-408E-9DFF-EAEF8CC29661}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF10E05C-1B39-408E-9DFF-EAEF8CC29661}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

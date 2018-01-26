@@ -4,13 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CFA67DEC-CE37-49E5-AD98-0825D48DF2DD}</ProjectGuid>
+    <ProjectGuid>{AF10E05C-1B39-408E-9DFF-EAEF8CC29661}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>gsPolyFontGenerator</RootNamespace>
-    <AssemblyName>gsPolyFontGenerator</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <RootNamespace>gsMeshSimplify</RootNamespace>
+    <AssemblyName>gsMeshSimplify</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -43,7 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="gsPolyFontGenerator.cs" />
+    <Compile Include="gsMeshSimplify.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

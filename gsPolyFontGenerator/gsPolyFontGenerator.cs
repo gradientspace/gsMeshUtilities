@@ -161,8 +161,9 @@ namespace gsPolyFontGenerator
                     cur_poly.AppendVertex(v);
                     if ((flags & 0x80) != 0) {
                         // [RMS] some characters have a duplicate start/end point after Flatten(). Some do not. Clusterfuck!
-                        if ( cur_poly.Start.Distance(cur_poly.End) < 0.001 )
-                            cur_poly.RemoveVertex(cur_poly.VertexCount - 1);  // we just duplicated first point
+                        int iLast = cur_poly.VertexCount - 1;
+                        if ( cur_poly[0].Distance(cur_poly[iLast]) < 0.001 )
+                            cur_poly.RemoveVertex(iLast);  // we just duplicated first point
                         complex.Add(cur_poly);
                     }
                 }

@@ -19,3 +19,6 @@ gsMeshSplit/gsMeshSplit.csproj.user
 gsPolyFontGenerator/obj/
 gsPolyFontGenerator/bin/
 .vs/
+gsMeshSimplify/obj/
+gsMeshSimplify/bin/
+gsMeshSimplify/gsMeshSimplify.csproj.user
