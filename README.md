@@ -10,6 +10,22 @@ Questions? Contact Ryan Schmidt [@rms80](http://www.twitter.com/rms80) / [gradie
 You can find pre-built windows executables in the top-level **builds** folder.
 
 
+# gsMeshSimplify
+
+Reduce triangle count for a mesh. Currently supports *OBJ*, *STL*, and *OFF*. 
+
+Usage:
+```
+gsMeshSimplify options <inputmesh>
+options:
+  -percent <N>        : reduce to this percentage (real-value)
+  -tcount <N>         : reduce to this triangle count (int)
+  -output <filename>  : output filename - default is inputmesh.reduced.fmt
+  -v                  : verbose
+```
+
+
+
 # gsMeshConvert
 
 Convert between mesh formats. Currently supports *OBJ*, *STL*, and *OFF*. 
